@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'dmantzproject';
+  title = 'dmantzproject'
+  data:string='';
+  get(event:any){
+    this.data=event.target.value;
+  }
 }

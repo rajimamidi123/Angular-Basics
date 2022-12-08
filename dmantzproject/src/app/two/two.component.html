@@ -1,0 +1,106 @@
+<p>two works!</p>
+<h1 class="textsuccess">hello world</h1>
+<h1 [class]="success">hello world</h1>
+
+<h2 [style.color]="'blue'">style binding</h2>
+<h3 [style.color]="haserror ? 'red' : 'yellow'">style binding</h3>
+<button (click)="onclick()">button</button>
+<br>
+<button (click)="event1($event)">button</button>
+<p>{{name1}}</p>
+<button (click)="greeting='good morning'">button</button>
+<p>{{greeting}}</p>
+<hr>
+<div [ngSwitch]="color">
+<div *ngSwitchCase="'red'">you picked red color</div>
+<div *ngSwitchCase="'blue'">you picked blue color</div>
+<div *ngSwitchDefault>pick again</div>
+</div>
+<br>
+<div *ngFor="let color of colors ;index as i">
+    <h2> {{i}} {{color}}</h2>
+</div>
+
+<h4>{{name3 | lowercase}}</h4>
+<h4>{{name3 | uppercase}}</h4>
+<h4>{{name3 | titlecase}}</h4>
+<h4>{{name3 | slice:3:5}}</h4>
+<h4>{{0.45 | percent}}</h4>
+<br>
+<ul *ngFor="let employee of employees">
+    <li>{{employee.id}}.{{employee.name}}.{{employee.age}}</li>
+    <!-- <li>{{employee.name}}</li>
+    <li>{{employee.age}}</li> -->
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "india": [
+      {
+        "cityname": "Hyd",
+        "weather": "cool"
+      },
+      {
+        "cityname": "Nalgonda",
+        "weather": "cool"
+      },
+      {
+        "cityname": "vizag",
+        "weather": "hot"
+      }
+      ]
+      {
+        "cityname": "karnool",
+        "weather": "hot"
+      }
+  }

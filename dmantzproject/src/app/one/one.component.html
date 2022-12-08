@@ -1,0 +1,30 @@
+<p>one works!</p>
+<h2>this is one component</h2>
+<p >server with{{ID}}is{{boolean}}{{status()}} </p>
+<input type="text" class="form-control" [(ngModel)]="servername">
+<button class="btn btn-primary" [disabled]="!allowservers" (click)="servercreated()">Add server</button>
+<!-- <p>{{allowservers}}</p> -->
+<!-- <p [innerText]="allowservers"></p> -->
+
+<p>{{server}}</p>
+
+<!-- if username is empty then button will be disabled -->
+
+
+<label>username</label>
+<input type="text" [(ngModel)]="username">
+<p>{{username}}</p>
+<button class="btn btn-primary" [disabled]="username===''" (click)="username=''">click</button>
+
+<hr>
+<label>terms and conditions</label>
+<input type="checkbox" [(ngModel)]="terms">
+<p>{{terms}}</p>
+<button class="btn btn-primary" [disabled]="terms===''">click</button>
+
+<hr>
+<input type="text" [(ngModel)]="raji">
+<p *ngIf="ifcondition; else noserver">entered data:{{raji}}</p>
+ <ng-template #noserver><p>no data entered</p></ng-template>
+ <button class="btn btn-success"(click)=condition()>click me!</button>
+ <hr>

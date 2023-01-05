@@ -32,58 +32,7 @@
     <!-- <li>{{employee.name}}</li>
     <li>{{employee.age}}</li> -->
 </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- 
 {
     "india": [
       {
@@ -98,9 +47,29 @@
         "cityname": "vizag",
         "weather": "hot"
       }
-      ]
+      
       {
         "cityname": "karnool",
         "weather": "hot"
-      }
-  }
+      }]
+  } -->
+  <h3>you selected department with id={{departmentId}}</h3>
+  <a (click)="gotoPrevious()">previous</a><br>
+  <a (click)="gotoNext()">next </a>
+
+  <table class ="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>cityname</th>
+        <th>weather</th>
+      </tr>
+      <tr *ngFor="let city of cityies" >
+        <td>{{city.id}}</td>
+        <td>{{city.cityname}}</td>
+        <td>{{city.weather}}</td>
+        <td><button class = "btn btn-danger" (click)="deleteById(city.id)">Delete</button></td>
+      </tr>
+    </thead>
+    <!-- <button class = "btn btn-danger" (click)="deleteAll(cityies)">Delete</button> -->
+  </table>

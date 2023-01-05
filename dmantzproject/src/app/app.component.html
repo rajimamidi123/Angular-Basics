@@ -1,7 +1,12 @@
 <h1>this is app component</h1>
 <input type="text" (change)="get($event)">
 <p>entered data is:{{data}}</p>
-<!-- <a routerLink="/one">one</a>
-<a>two</a> -->
-
+<div class="nav">
+<a routerLink="/one" routerLinkActive="active" class="r1">one</a><br>
+<a routerLink="/two" routerLinkActive="active"class="r1">two</a><br>
+<a routerLink="/crud" routerLinkActive="active" class="r1">crud</a><br>
+<a routerLink="/post" routerLinkActive="active" class="r1">post</a><br>
+<a routerLink="/reactive-forms" routerLinkActive="active" class="r1">reactive-forms</a><br>
+</div>
+<!-- <app-reactive-forms></app-reactive-forms> -->
 <router-outlet></router-outlet>

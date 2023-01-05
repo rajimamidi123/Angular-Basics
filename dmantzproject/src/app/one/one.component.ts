@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {  Router } from '@angular/router';
 
 @Component({
   selector: 'app-one',
@@ -15,7 +16,13 @@ export class OneComponent implements OnInit {
   ifcondition = false
   terms=''
   raji=''
-  constructor() {
+  departments:any=[
+    {"id":1,"name":"Angular"},
+    {"id":2,"name":"java"},
+    {"id":3,"name":"bootstrap"},
+    {"id":4,"name":"python"}
+  ]
+  constructor( private router:Router ) {
    
     
     setTimeout(() => {
@@ -34,5 +41,8 @@ export class OneComponent implements OnInit {
   }
   condition(){
     this.ifcondition = true;
+  }
+  onselect(department:any){
+    this.router.navigate(['/departments',department.id])
   }
 }

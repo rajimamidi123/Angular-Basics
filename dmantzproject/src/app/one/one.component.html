@@ -28,3 +28,9 @@
  <ng-template #noserver><p>no data entered</p></ng-template>
  <button class="btn btn-success"(click)=condition()>click me!</button>
  <hr>
+ <ul >
+    <li (click)="onselect(department)" *ngFor="let department of departments">
+        {{department.id}}.{{department.name}}</li>
+ </ul>
+
+ {{30 | multiplication:40}}

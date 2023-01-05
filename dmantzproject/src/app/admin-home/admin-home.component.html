@@ -1,0 +1,82 @@
+<h1>admin-home works!</h1>
+<div class="container-fluid" *ngFor="let stu of student ">
+    <div class="row">
+        <div class="col-6">
+            <h1> ID:
+                {{stu.id}}</h1>
+        </div>
+        <div class="col-6">
+            <h1> StudentName:
+                {{stu.studentname}}</h1>
+        </div>
+        
+    </div>
+    <!-- <h1>student Markslist year2019</h1> -->
+
+    <table class="table" *ngFor="let abc of stu.markslist">
+        <table class="table">
+            <thead>
+                <tr>
+                    <h5>year:{{abc.year}}</h5>
+                </tr>
+            </thead>
+            <tr *ngFor="let def of abc.marks">
+                <h5>SubjectName:
+                    {{def.subject}}
+                </h5>
+                <h5>Marks:
+                    {{def.marks}}
+                </h5>
+            </tr>
+        </table>
+    </table>
+    <!-- <tr *ngIf="let year of def.marks">
+                <td>{{year.subject}}</td>
+                <td>{{year.marks}}</td>
+            </tr> -->
+    <!-- </table>
+
+    </table>   -->
+
+    <!-- <h1>student Markslist year2020</h1>
+    <table class="table" *ngFor="let abc of stu.year">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>marks</th>
+
+                </tr>
+            </thead>
+            <tr *ngFor="let def of abc.year2020">
+                <td>{{def.subject}}</td>
+                <td>{{def.marks}}</td>
+            </tr>
+        </table>
+
+    </table>
+
+    <h1>student Markslist year2020</h1>
+    <table class="table" *ngFor="let abc of stu.year">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>marks</th>
+
+                </tr>
+            </thead>
+            <tr *ngFor="let def of abc.year2021">
+                <td>{{def.subject}}</td>
+                <td>{{def.marks}}</td>
+            </tr>
+        </table>
+    </table> -->
+</div>
+
+<!-- in radio buttons name should be same -->
+<input type="radio" id="raji2" name="radio">    
+<label>car</label>
+<input type="radio" id="raji2" name="radio">
+<label>bus</label>
+

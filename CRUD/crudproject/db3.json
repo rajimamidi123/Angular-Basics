@@ -1,0 +1,17 @@
+{
+	"Student": {
+		"name": "Navya",
+        "id":1,
+		"qualification": [{
+			"title": "MCA",
+			"year": 2022,
+			"id":2,
+			"subjects": [{
+				"id":3,
+				"subname": "ComputerScience",
+				"duration": "6 Months"
+
+			}]
+		}]
+	}
+}

@@ -12,13 +12,16 @@
             <th>firstName</th>
             <th>lastName</th>
             <th>emailId</th>
+            <th>Phone</th>
             <th>Action</th>
+           
         </tr>
         <tr *ngFor="let employee of employees | filter:searchText">
             <td>{{employee.id}}</td>
             <td>{{employee.firstName}}</td>
             <td>{{employee.lastName}}</td>
             <td>{{employee.emailId}}</td>
+            <td>{{employee.phone}}</td>
            
               <td><i class="bi bi-arrow-repeat"></i>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16" (click)=updateEmployee(employee.id)>
@@ -43,6 +46,7 @@
     </thead>
 </table>
 <span><a routerLink="/add-employee" routerLinkActive="active">Add employee-details</a></span>
+<button  type="button" (click)="addEmployee()">ADD</button>
 
 </div>  
 

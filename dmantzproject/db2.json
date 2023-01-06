@@ -1,0 +1,35 @@
+{
+    "studentlist":[{
+    "id": 1,
+    "studentname": "Rajeshwari",
+    "markslist": [
+        {
+            "year": "2019",
+            "marks": [
+                {
+                    "subject": "java",
+                    "marks": 86
+                }
+            ]
+        },
+        {
+            "year": "2020",
+            "marks": [
+                {
+                    "subject": "python",
+                    "marks": 80
+                }
+            ]
+        },
+        {
+            "year": 2021,
+            "marks": [
+                {
+                    "subject": "Html",
+                    "marks": 90
+                }
+            ]
+        }
+      ]
+    }]
+}

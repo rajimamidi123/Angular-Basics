@@ -1,0 +1,91 @@
+<div class="box">
+    <h2>Login Register</h2>
+    <form [formGroup]="registerform">
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group inputBox">
+                    <label>Username:</label>
+                    <input type="text" formControlName="username" class="form-control">
+                    <div
+                        *ngIf="registerform.controls['username'].touched && registerform.controls['username'] ?.['errors']">
+                        <span *ngIf="f ['username'].getError('required')!=null" class="invalid"> enter username</span>
+                        <span *ngIf="f ['username'].getError('minlength')!=null" class="invalid"> minimum length is
+                            5</span>
+                    </div>
+                   
+                </div>
+
+
+
+                <div class="form-group">
+                    <label>password</label>
+                    <input class="form-control" formControlName="password">
+                    <div
+                        *ngIf="registerform.controls['password'].touched &&registerform.controls['password'] ?.['errors']">
+                        <span *ngIf="f['password'].getError('required')!=null" class="invalid">password is
+                            required</span>
+                    </div>
+                    <br>
+                </div>
+
+
+                <div class="form-group">
+                    <label>confirm password</label>
+                    <input class="form-control" formControlName="cpassword">
+                    <div
+                        *ngIf="registerform.controls['cpassword'].touched &&registerform.controls['cpassword'] ?.['errors']">
+                        <span *ngIf="f['cpassword'].getError('required')!=null" class="invalid">confirm password is
+                            required</span>
+                        <span *ngIf="f['cpassword'].getError('mustMatch')!=null" class="invalid">password
+                            mismatched</span>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label>email</label>
+                    <input class="form-control" formControlName="email">
+                     <div *ngIf="registerform.controls['email'].touched &&registerform.controls['email'] ?.['errors']">
+                        <span *ngIf="f['email'].getError('required')!=null" class="invalid">email is required</span> 
+                 </div> 
+                 <div>
+                    <span *ngIf="registerform.controls['email'].errors" class="text-danger">email is invalid</span>
+                 </div>    
+                     
+                 
+
+                    <input type="submit" name="submit"[disabled]="!registerform.valid" value="Register" class="btn btn-success" (click)=" submitForm()">
+                </div>
+               
+            </div>
+
+                <div class="col-6">
+                    <div formGroupName="address">
+                        <div class="form-group inputBox">
+                            <input type="text" formControlName="city" class="form-control" required="">
+
+                            <label>City:</label>
+                        </div>
+
+
+                        <div class="form-group inputBox">
+                            <input type="text" formControlName="state" class="form-control" required="">
+
+                            <label>State:</label>
+                        </div>
+
+                        <div class="form-group inputBox">
+                            <input type="text" formControlName="pincode" class="form-control" required="">
+
+                            <label>pincode:</label>
+                        </div>
+                        <!-- <input tpye="submit" class="btn btn-success" name="submit" value="Display" (click)="displayValues()"> -->
+                    </div>
+                </div>
+
+            </div>
+         
+
+    </form>
+</div>
+<router-outlet></router-outlet>

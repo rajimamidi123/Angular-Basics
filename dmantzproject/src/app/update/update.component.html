@@ -1,0 +1,29 @@
+
+<h1>update students</h1>
+<div class="col-md-8 offset-md-3">
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group" class="col-6">
+        <label>id</label>
+        <input type="number" class="form-control" id="id" [(ngModel)]="students.id" name="id">
+
+    </div>
+    <div class="form-group" class="col-6">
+        <label>firstName</label>
+        <input type="text" class="form-control" id="firstName" [(ngModel)]="students.firstName" name="firstName">
+
+    </div>
+    <div class="form-group" class="col-6">
+        <label>lastName</label>
+        <input type="text" class="form-control" id="lastName" [(ngModel)]="students.lastName" name="lastName">
+
+    </div>
+    <div class="form-group" class="col-6">
+        <label>emailId</label>
+        <input type="email" class="form-control" id="emailId" [(ngModel)]="students.emailId" name="emailId">
+
+    </div>
+    <button class="btn btn-success" type="submit" (click)="onSubmit()">Submit</button>
+   
+
+</form>
+</div>

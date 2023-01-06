@@ -56,4 +56,8 @@ search(event:any){
   }
   this.employees=matchrecord;
 }
+addEmployee(){
+  this.employees.push()
+}
+
 }

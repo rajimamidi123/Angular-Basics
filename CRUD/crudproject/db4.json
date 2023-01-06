@@ -1,0 +1,32 @@
+{
+  "signup": [
+    {
+      "FirstName": "Mamidi",
+      "LastName": "Rajeshwari",
+      "email": "rajimamidi@gmail.com",
+      "password": "123",
+      "id": 1,
+      "qualification": [
+        {
+          "course": "MCA",
+          "duration": 3,
+          "subject": [
+            {
+              "title": "ComputerScience"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "FirstName": "swapna",
+      "LastName": "koyagura",
+      "email": "swapna.n279@gmail.com",
+      "password": "123456",
+      "id": 2
+    }
+  ]
+}
+
+
+

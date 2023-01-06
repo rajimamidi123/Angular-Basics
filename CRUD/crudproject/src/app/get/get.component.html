@@ -1,0 +1,15 @@
+<p>get works!</p>
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>cityname</th>
+            <th>weather</th>
+        </tr>
+        <tr *ngFor="let city of cityies">
+            <td>{{city.id}}</td>
+            <td>{{city.cityname}}</td>
+            <td>{{city.weather}}</td>
+        </tr>
+    </thead>
+</table>

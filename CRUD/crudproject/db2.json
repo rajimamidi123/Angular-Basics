@@ -1,0 +1,25 @@
+ {
+    "country": [
+       {
+
+         "id":1,
+        "cityname": "Hyd",
+        "weather": "cool" 
+       },
+       {
+        "id":2,
+        "cityname": "Nalgonda",
+       "weather": "cool"
+     },
+      {
+         "id":3,
+         "cityname": "vizag",
+        "weather": "hot"
+      },
+       {          "id":4,
+         "cityname": "karnool",
+         "weather": "hot"
+       }
+       ]
+     
+   }

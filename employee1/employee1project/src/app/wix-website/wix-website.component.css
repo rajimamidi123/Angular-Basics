@@ -1,0 +1,157 @@
+#header{
+    height: 70px;
+    width:1400px ;
+    background-color:white;
+    position: fixed;
+    top: 0%;
+    
+    
+}
+/* #sticky{
+position: sticky;
+} */
+.AV8G6s{
+    margin-left: 100px;
+    font-size:40px;
+    margin-top: 10px;
+    font-style: italic;
+}
+.para{
+ position: relative;
+    margin-left: 600px;
+   margin-top: -40px;
+}
+#header2{
+    height: 35px;
+    width:1400px ;
+    background-color: #d4e9c6; 
+    border-bottom: 1px solid black;
+    margin-top: 70px;
+}
+.para2{
+    margin-left: 500px;
+    margin-top: 10px;
+}
+#header3{
+    height: 80px;
+    width:1400px ; 
+    border-bottom: 1px solid black;
+    display: flex;
+    }
+.para3{
+   
+   padding: 3px;
+   font-size: 20px; 
+   margin-left: 80px;
+   margin-top: 20px;
+}
+.para4{
+    font-weight:bolder;
+    color:#3d5a23; 
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: 20px;
+    font-style: italic;
+}
+ .edit{
+    height: 45px;
+    width: 180px;
+    background-color:midnightblue;
+    margin-left: 1100px;
+    border-radius: 20px;
+    margin-top: -50px;
+    /* margin-bottom: 400px; */
+    position: absolute;
+    color: aliceblue;
+    border: none;
+} 
+.profile{
+    margin-top: 20px;
+    color:#3d5a23;
+    margin-left:200px ;
+   
+}
+.login{
+    margin-top: 20px;
+    margin-left:20px;
+    font-size: 20px;
+}
+.lock{
+    margin-top: 20px;
+    margin-left:40px;
+ 
+    color:#3d5a23;
+}
+.img1{
+    height: 700px;
+    width: 650px;
+    margin-left:50% ;
+    margin-top: -650px;
+  
+    }
+    .para5{
+        color: #3d5a23;
+        font-style: italic;
+        font-size:50px;
+       font-weight: bolder;
+       word-spacing: 10px;
+       line-height:60px ;
+    }
+    .middleh1{
+        height: 300px;
+        width: 500px;
+        margin-top: 100px;
+        margin-left: 150px;
+    }
+    .middleh2{
+        height: 300px;
+        width: 500px;
+      margin-top: -50px;
+        margin-left: 150px;
+    }
+    .para6{
+        color: #3d5a23;
+        font-style: italic;
+        word-spacing: 10px;
+        line-height:30px ;
+        font-size:30px;
+        font-weight: 20px;
+    }
+    .shop{
+        border-radius: 30px;
+        height: 60px;
+        width: 170px;
+        color: aliceblue;
+        background-color: #3d5a23;
+     margin-top: 50px;
+        margin-left: 50px;
+        border: none;
+    }
+    .border{
+        border-bottom: 5px solid black;
+    }
+    #bottom{
+        margin-left: 120px;
+        margin-right: 100px;
+    }
+     #img2{
+       margin-left: 300px;
+    } 
+   
+       #laptop{
+        margin-left: 400px; 
+         margin-top: -45px; 
+         color: dodgerblue;
+    } 
+    #phone{
+        margin-left: 450px; 
+        margin-top: -45px; 
+        color: dodgerblue;  
+    }  
+    #straight{
+        margin-left: 440px; 
+        margin-top: -45px;
+        color: dodgerblue; 
+       
+    }
+ 

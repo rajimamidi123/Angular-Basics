@@ -5,23 +5,31 @@
   <h1 class="heading">empolyee List!</h1>
   <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." class="col-6" [(ngModel)]="searchText">
 
-<table class="table" id="datalistOptions" >
+<table class="table" id="datalistOptions">
+  
     <thead>
+      <select (change)="onTableSizechange($event)">
+        <option *ngFor="let size of tableSizes">
+          {{size}}
+        </option>
+      </select>
         <tr> 
-            <th>id</th>
+            <th (click)="sortData()">id</th>
             <th>firstName</th>
             <th>lastName</th>
             <th>emailId</th>
             <th>Phone</th>
-            <th>Action</th>
+            <th >Action</th>
            
         </tr>
-        <tr *ngFor="let employee of employees | filter:searchText">
+        <tr *ngFor="let employee of employees | filter:searchText | paginate:{itemsPerPage:tableSize,currentPage:page,totalItems:count};
+                 let i=index">
             <td>{{employee.id}}</td>
             <td>{{employee.firstName}}</td>
             <td>{{employee.lastName}}</td>
             <td>{{employee.emailId}}</td>
             <td>{{employee.phone}}</td>
+
            
               <td><i class="bi bi-arrow-repeat"></i>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16" (click)=updateEmployee(employee.id)>
@@ -46,7 +54,14 @@
     </thead>
 </table>
 <span><a routerLink="/add-employee" routerLinkActive="active">Add employee-details</a></span>
-<button  type="button" (click)="addEmployee()">ADD</button>
+<div>
+  <pagination-controls 
+  previousLable="Prev"
+  nextLable="Next"
+  (pageChange)="onTableDataChange($event)">
+
+  </pagination-controls>
+</div>
 
 </div>  
 

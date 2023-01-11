@@ -2,16 +2,17 @@
     /* width: 1200px;
     height: 700px; */
     font-size: 20px;
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
  
 .box1{
-    width: 1400px;
-    height: 900px;
-    /* margin-left: 100px; */
-    border: 1px solid;
-    padding: 10px;
-    box-shadow: 5px 10px 8px 10px #888888;
+     width: 1300px;
+    height: 900px; 
+     margin-left: 20px; 
+     margin-right: 50px;
+     border: 1px solid;
+    padding: 10px; 
+     box-shadow: 5px 10px 8px 10px #888888; 
 }
 .heading{
     text-align: center;

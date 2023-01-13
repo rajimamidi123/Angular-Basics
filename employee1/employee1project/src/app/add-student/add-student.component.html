@@ -1,0 +1,45 @@
+<div class="container">
+    <form [formGroup]="studentList">
+        <!-- <h4 class="card-header">SignUp Form</h4> -->
+        <div class="form-group">
+            <label>FirstName:</label>
+            <input type="text" formControlName="FirstName" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>LastName:</label>
+            <input type="text" formControlName="LastName" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Roll number</label>
+            <input type="number" formControlName="rollnumber" class="form-control">
+        </div>
+      
+        <br>
+        <!-- <button type="submit" class="btn btn-success" (click)="submit()">SignUp</button> -->
+
+
+
+
+
+        <div class="container" [formGroup]="employeelist">
+
+            <!-- <h4 class="card-header">SignUp Form</h4> -->
+            <div class="form-group">
+                <label>Employeename:</label>
+                <input type="text" formControlName="Employeename" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>EmployeeId</label>
+                <input type="text" formControlName="EmployeeId" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>email</label>
+                <input type="email" formControlName="email" class="form-control">
+            </div>
+
+
+            <br>
+            <button type="submit" class="btn btn-success" (click)="submit()">SignUp</button>
+           </div>
+         </form>
+     </div>
